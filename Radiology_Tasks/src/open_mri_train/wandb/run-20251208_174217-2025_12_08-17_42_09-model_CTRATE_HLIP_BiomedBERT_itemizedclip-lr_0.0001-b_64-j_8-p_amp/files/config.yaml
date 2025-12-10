@@ -1,0 +1,442 @@
+wandb_version: 1
+
+train_data:
+  desc: null
+  value: itemized
+train_data_upsampling_factors:
+  desc: null
+  value: null
+val_data:
+  desc: null
+  value: null
+train_num_samples:
+  desc: null
+  value: null
+val_num_samples:
+  desc: null
+  value: null
+dataset_type:
+  desc: null
+  value: auto
+dataset_resampled:
+  desc: null
+  value: false
+use_serienames:
+  desc: null
+  value: false
+alt_report:
+  desc: null
+  value: false
+csv_separator:
+  desc: null
+  value: "\t"
+csv_img_key:
+  desc: null
+  value: filepath
+csv_caption_key:
+  desc: null
+  value: title
+imagenet_val:
+  desc: null
+  value: null
+imagenet_v2:
+  desc: null
+  value: null
+test_data:
+  desc: null
+  value: null
+num_series:
+  desc: null
+  value: 10
+context_length:
+  desc: null
+  value: 256
+no_normal_check:
+  desc: null
+  value: false
+comp_upfac:
+  desc: null
+  value: 1.0
+key_token_alignment_loss:
+  desc: null
+  value: 1.0
+key_token_thresh:
+  desc: null
+  value: 0.05
+cache_dir:
+  desc: null
+  value: null
+logs:
+  desc: null
+  value: /scratch/tocho_root/tocho99/yiweilyu/logs/
+log_local:
+  desc: null
+  value: false
+name:
+  desc: null
+  value: 2025_12_08-17_42_09-model_CTRATE_HLIP_BiomedBERT_itemizedclip-lr_0.0001-b_64-j_8-p_amp
+workers:
+  desc: null
+  value: 8
+batch_size:
+  desc: null
+  value: 16
+epochs:
+  desc: null
+  value: 80
+epochs_cooldown:
+  desc: null
+  value: null
+lr:
+  desc: null
+  value: 0.0001
+beta1:
+  desc: null
+  value: 0.9
+beta2:
+  desc: null
+  value: 0.98
+eps:
+  desc: null
+  value: 1.0e-06
+wd:
+  desc: null
+  value: 0.5
+momentum:
+  desc: null
+  value: null
+warmup:
+  desc: null
+  value: 100
+opt:
+  desc: null
+  value: adamw
+use_bn_sync:
+  desc: null
+  value: false
+skip_scheduler:
+  desc: null
+  value: false
+lr_scheduler:
+  desc: null
+  value: cosine
+lr_cooldown_end:
+  desc: null
+  value: 0.0
+lr_cooldown_power:
+  desc: null
+  value: 1.0
+save_frequency:
+  desc: null
+  value: 1
+save_most_recent:
+  desc: null
+  value: false
+zeroshot_frequency:
+  desc: null
+  value: 1
+val_frequency:
+  desc: null
+  value: 1
+resume:
+  desc: null
+  value: null
+precision:
+  desc: null
+  value: amp
+model:
+  desc: null
+  value: CTRATE_HLIP_BiomedBERT_itemizedclip
+pretrained:
+  desc: null
+  value: ''
+pretrained_image:
+  desc: null
+  value: false
+lock_image:
+  desc: null
+  value: false
+lock_image_unlocked_groups:
+  desc: null
+  value: 0
+lock_image_freeze_bn_stats:
+  desc: null
+  value: false
+image_mean:
+  desc: null
+  value: null
+image_std:
+  desc: null
+  value: null
+image_interpolation:
+  desc: null
+  value: null
+image_resize_mode:
+  desc: null
+  value: null
+aug_cfg:
+  desc: null
+  value: {}
+accum_batch:
+  desc: null
+  value: 4
+grad_checkpointing:
+  desc: null
+  value: true
+local_loss:
+  desc: null
+  value: false
+gather_with_grad:
+  desc: null
+  value: false
+force_image_size:
+  desc: null
+  value: null
+force_quick_gelu:
+  desc: null
+  value: false
+force_patch_dropout:
+  desc: null
+  value: null
+force_custom_text:
+  desc: null
+  value: false
+torchscript:
+  desc: null
+  value: false
+torchcompile:
+  desc: null
+  value: false
+trace:
+  desc: null
+  value: false
+accum_freq:
+  desc: null
+  value: 1
+device:
+  desc: null
+  value: cuda:0
+dist_url:
+  desc: null
+  value: env://localhost:29427
+dist_backend:
+  desc: null
+  value: null
+report_to:
+  desc: null
+  value: wandb
+wandb_notes:
+  desc: null
+  value: ''
+wandb_project_name:
+  desc: null
+  value: itemizedclip-ctrate
+debug:
+  desc: null
+  value: false
+copy_codebase:
+  desc: null
+  value: false
+horovod:
+  desc: null
+  value: false
+ddp_static_graph:
+  desc: null
+  value: false
+no_set_device_rank:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 0
+grad_clip_norm:
+  desc: null
+  value: null
+lock_text:
+  desc: null
+  value: true
+lock_text_unlocked_layers:
+  desc: null
+  value: 0
+lock_text_freeze_layer_norm:
+  desc: null
+  value: false
+log_every_n_steps:
+  desc: null
+  value: 10
+coca_caption_loss_weight:
+  desc: null
+  value: 2.0
+coca_contrastive_loss_weight:
+  desc: null
+  value: 1.0
+remote_sync:
+  desc: null
+  value: null
+remote_sync_frequency:
+  desc: null
+  value: 300
+remote_sync_protocol:
+  desc: null
+  value: s3
+delete_previous_checkpoint:
+  desc: null
+  value: false
+distill_model:
+  desc: null
+  value: null
+distill_pretrained:
+  desc: null
+  value: null
+use_bnb_linear:
+  desc: null
+  value: null
+siglip:
+  desc: null
+  value: false
+loss_dist_impl:
+  desc: null
+  value: null
+is_ct:
+  desc: null
+  value: false
+itemizedclip_text:
+  desc: null
+  value: false
+custom_clip_loss:
+  desc: null
+  value: false
+correct_false_negatives:
+  desc: null
+  value: false
+report_replacer:
+  desc: null
+  value: null
+use_itemizedclip_loss:
+  desc: null
+  value: true
+add_mps_loss:
+  desc: null
+  value: true
+iis_loss:
+  desc: null
+  value: 1.0
+mps_fac:
+  desc: null
+  value: 0.1
+ila_fac:
+  desc: null
+  value: 1.0
+ila_mask_rate:
+  desc: null
+  value: 0.95
+num_sampled_captions:
+  desc: null
+  value: 10
+save_and_eval_every:
+  desc: null
+  value: 1
+is_ct_rate:
+  desc: null
+  value: true
+diverse_sampling:
+  desc: null
+  value: false
+zeroshot_ct_rate:
+  desc: null
+  value: true
+input_info:
+  desc: null
+  value:
+  - '-1150'
+  - '350'
+  - crop
+use_cxr_bert:
+  desc: null
+  value: true
+distributed:
+  desc: null
+  value: true
+world_size:
+  desc: null
+  value: 8
+rank:
+  desc: null
+  value: 0
+local_rank:
+  desc: null
+  value: 0
+log_path:
+  desc: null
+  value: /scratch/tocho_root/tocho99/yiweilyu/logs/2025_12_08-17_42_09-model_CTRATE_HLIP_BiomedBERT_itemizedclip-lr_0.0001-b_64-j_8-p_amp/out.log
+log_level:
+  desc: null
+  value: 20
+wandb:
+  desc: null
+  value: true
+tensorboard:
+  desc: null
+  value: false
+checkpoint_path:
+  desc: null
+  value: /scratch/tocho_root/tocho99/yiweilyu/logs/2025_12_08-17_42_09-model_CTRATE_HLIP_BiomedBERT_itemizedclip-lr_0.0001-b_64-j_8-p_amp/checkpoints
+tensorboard_path:
+  desc: null
+  value: ''
+distill:
+  desc: null
+  value: false
+dotrain:
+  desc: null
+  value: false
+save_logs:
+  desc: null
+  value: true
+train_sz:
+  desc: null
+  value: 24128
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.18
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.49.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1765233737.0
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 43
+      - 49
+      - 53
+      - 55
+      - 63
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 43
+      - 49
+      - 53
+      - 55
+      - 63
+      3:
+      - 3
+      - 13
+      - 14
+      - 16
+      - 23
+      - 61
+      4: 3.9.18
+      5: 0.16.6
+      6: 4.49.0
+      8:
+      - 5
+      13: linux-x86_64

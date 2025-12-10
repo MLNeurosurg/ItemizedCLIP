@@ -1,0 +1,19 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Saving files without folders. If you want to preserve subdirectories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+2025-12-04,17:04:50 | INFO | Use custom clip loss.
+2025-12-04,17:04:50 | INFO | Start epoch 0
+Traceback (most recent call last):
+  File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/main.py", line 600, in <module>
+    main(sys.argv[1:])
+  File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/main.py", line 523, in main
+    train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
+  File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/../open_mri_train/train.py", line 149, in train_one_epoch
+    if inneriter == 0:
+NameError: name 'inneriter' is not defined
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/main.py", line 600, in <module>
+[rank0]:     main(sys.argv[1:])
+[rank0]:   File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/main.py", line 523, in main
+[rank0]:     train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
+[rank0]:   File "/nfs/turbo/umms-tocho/code/yiwei/ItemizedCLIP/Radiology_Tasks/src/open_mri_train/../open_mri_train/train.py", line 149, in train_one_epoch
+[rank0]:     if inneriter == 0:
+[rank0]: NameError: name 'inneriter' is not defined

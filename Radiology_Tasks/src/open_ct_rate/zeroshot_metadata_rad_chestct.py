@@ -1,0 +1,36 @@
+CLASSNAMES = [
+    "Emphysema",
+    "Atelectasis",
+    "Lung nodule",
+    "Lung opacity",
+    "Pulmonary fibrotic sequela",
+    "Pleural effusion",
+    "Peribronchial thickening",
+    "Consolidation",
+    "Bronchiectasis",
+    "Interlobular septal thickening",
+    "Cardiomegaly",
+    "Pericardial effusion",
+    "Coronary artery wall calcification",
+    "Hiatal hernia",
+    "Arterial wall calcification",
+]
+
+ORGANS = {
+    "Emphysema": "lung",
+    "Atelectasis": "lung",
+    "Lung nodule": "lung",
+    "Lung opacity": "lung",
+    "Pulmonary fibrotic sequela": "lung",
+    "Pleural effusion": "lung",
+    "Peribronchial thickening": "lung",
+    "Consolidation": "lung",
+    "Bronchiectasis": "lung",
+    "Interlobular septal thickening": "lung",
+    "Cardiomegaly": "heart",
+    "Pericardial effusion": "heart",
+    "Coronary artery wall calcification": "heart",
+    "Hiatal hernia": "esophagus",
+    "Arterial wall calcification": "aorta",
+}
+

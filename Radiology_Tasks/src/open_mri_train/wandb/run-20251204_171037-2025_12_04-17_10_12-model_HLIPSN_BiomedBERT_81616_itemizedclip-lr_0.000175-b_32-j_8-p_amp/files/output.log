@@ -1,0 +1,4 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Saving files without folders. If you want to preserve subdirectories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+2025-12-04,17:10:44 | INFO | Use custom clip loss.
+2025-12-04,17:10:44 | INFO | Start epoch 0
+2025-12-04,17:11:19 | INFO | Train Epoch: 0 [   256/220001 (0%)] Data (t): 10.387 Batch (t): 35.397, 1.80808/s, 0.226010/s/gpu LR: 0.000000 Logit Scale: 14.286 Contrastive_loss: 78.614 (78.614) Loss: 78.614 (78.614)

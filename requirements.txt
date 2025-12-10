@@ -1,0 +1,4 @@
+numpy
+ipykernel
+open_clip_torch
+open_clip_torch[training]
