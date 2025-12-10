@@ -1,12 +1,23 @@
 # ItemizedCLIP
 
+This is the code repository for the paper "Learning complete and explainable visual representations from itemized text supervision".
 
+```
+Arxiv Coming Soon!
+```
+
+### Abstract
+
+Training vision models with language supervision enables general and transferable representations. However, many visual domains, especially non-object-centric domains such as medical imaging and remote sensing, contain itemized text annotations: multiple text items describing distinct and semantically independent findings within a single image. Such supervision differs from standard multi-caption supervision, where captions are redundant or highly overlapping. Here, we introduce ItemizedCLIP, a framework for learning complete and explainable visual representations from itemized text supervision. ItemizedCLIP employs a cross-attention module to produce text item-conditioned visual embeddings and a set of tailored objectives that jointly enforce item independence (distinct regions for distinct items) and representation completeness (coverage of all items). Across four domains with naturally itemized text supervision (brain MRI, head CT, chest CT, remote sensing) and one additional synthetically itemized dataset, ItemizedCLIP achieves substantial improvements in zero-shot performance and fine-grained interpretability over baselines. The resulting ItemizedCLIP representations are semantically grounded, item-differentiable, complete, and visually interpretable.
+
+
+Below are the detailed instructions on how to train/evaluate models with this repository on all 5 domains that we have conducted experiments on in this paper.
 
 ## Whole-study brain MRI (UM220K)
 
 ### Dataset Download
 
-The training data, UM220K, has restricted access due to patient privacy protection. Pub-brain-5 dataset (which we used as evaluation) is publically available, and you may download the dataset following instructions [here](https://github.com/Zch0414/hlip/tree/master/data). 
+The training data, UM220K, has restricted access due to patient privacy protection. Pub-brain-5 dataset (which we used as evaluation) is publicly available, and you may download the dataset following the instructions [here](https://github.com/Zch0414/hlip/tree/master/data). 
 
 ### Training
 
