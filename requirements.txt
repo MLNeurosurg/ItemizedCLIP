@@ -1,4 +1,13 @@
 numpy
-ipykernel
 open_clip_torch
 open_clip_torch[training]
+flash_attn
+pandas
+scikit-learn
+einops
+positional-encodings
+timm
+tqdm
+pillow
+webdataset
+braceexpand
